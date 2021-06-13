@@ -1,0 +1,131 @@
+/* Navigation Bar */
+
+#navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar .topbar {
+    width: 100%;
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar ul li {
+    padding: 1px;
+    margin: 4px auto;
+}
+
+#navbar ul li a {
+    /* width: auto; */
+    /* border: 2px solid red; */
+    /* color: white; */
+    display: block;
+    padding: 3px 6px;
+    /* border-radius: 20px;
+    text-decoration: none; */
+}
+
+
+/* Home */
+
+#home {
+    /* border: 2px solid yellow; */
+    height: 465px;
+}
+
+#home::before {
+    /* border: 2px solid red; */
+    height: 599px;
+}
+
+#home .heading {
+    font-size: 1.5rem;
+}
+
+#home p {
+    font-size: 1rem;
+}
+
+#home .btn {
+    width: 100px;
+}
+
+#home img {
+    height: 800px;
+}
+
+
+/* Services */
+
+#services-container {
+    /* border: 2px solid red; */
+    /* height: 163vh; */
+    /* height: 83vh; */
+    height: 110vh;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    flex-wrap: wrap;
+}
+
+#services-container .primary-heading {
+    /* font-size: 1.5rem; */
+    /* border: 2px solid red; */
+    padding: 22px 3px;
+    margin-top: 17px;
+}
+
+#services-container #services {
+    /* border: 2px solid red; */
+    flex-direction: column;
+}
+
+
+/* Client Section */
+
+#client-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    /* height: 90vh; */
+    height: 185vh;
+    /* margin-top: 10px; */
+}
+
+#client-section::before {
+    height: 80%;
+}
+
+#client-section .item-section {
+    flex-direction: column;
+    margin: 23px auto;
+}
+
+
+/* Contact Section */
+
+#details {
+    /* border: 2px solid red; */
+    height: 715px;
+}
+
+#details .detail-items {
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#details .detail-items form {
+    /* order: 2px solid red; */
+    width: 65%;
+}
+
+#details::before {
+    height: 715px;
+}

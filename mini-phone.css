@@ -1,0 +1,27 @@
+/* Navigation Bar */
+
+
+/* Home Section */
+
+
+/* Service Section */
+
+#services-container {
+    height: 1395px;
+    /* border: 2px solid red; */
+}
+
+
+/* Client Section */
+
+#client-section {
+    /* border: 2px solid black; */
+    height: 100vh;
+}
+
+#client-section::before {
+    height: 100vh;
+}
+
+
+/* Contact Section */

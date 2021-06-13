@@ -1,0 +1,321 @@
+        /* CSS Reset */
+        
+        * {
+            font-family: 'Ubuntu', sans-serif;
+            padding: 0px;
+            margin: 0px;
+            color: black;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Navigation Bar */
+        
+        #navbar {
+            top: 0px;
+            display: flex;
+            position: sticky;
+        }
+        
+        #navbar::before {
+            /* top: 0px; */
+            content: "";
+            background-color: black;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.7;
+            top: 0px;
+            left: 0px;
+        }
+        /* Navigation Bar - Logo */
+        
+        #navbar .logo {
+            /* border: 2px solid red; */
+            padding: 2px 2px;
+            margin: 7px 12px;
+        }
+        
+        #navbar .logo img {
+            width: 63px;
+            height: 55px;
+            border-radius: 50%;
+        }
+        /* Navigation bar - List Styling */
+        
+        #navbar ul {
+            margin: 7px 34px;
+            display: flex;
+            /* border: 2px solid red; */
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #navbar ul li {
+            /* border: 2px solid white; */
+            padding: 7px;
+            margin: 7px 12px;
+            list-style: none;
+            border-radius: 30px;
+        }
+        
+        #navbar ul li a {
+            /* border: 2px solid white; */
+            color: white;
+            padding: 10px;
+            margin: 6px 0px;
+            border-radius: 24px;
+            font-size: 15px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        
+        #navbar ul li a:hover {
+            background-color: white;
+            color: green;
+        }
+        /* Home Section */
+        
+        #home {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 517px;
+            /* border: 2px solid green; */
+        }
+        
+        #home::before {
+            top: 0px;
+            content: "";
+            background: url('Image/home.jpg') no-repeat center center/cover;
+            position: absolute;
+            height: 592px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.9;
+        }
+        /* Home Section - Heading */
+        
+        #home h1 {
+            color: white;
+            text-align: center;
+            /* border: 2px solid red; */
+            padding: 23px;
+            margin-top: 12px;
+            margin-bottom: -13px;
+            font-weight: bold;
+            font-size: 2.5rem;
+        }
+        /* Home Section - Paragraph */
+        
+        #home p {
+            /* border: 2px solid red; */
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: white;
+            text-align: justify;
+            padding: 10px;
+            margin-top: 6px;
+        }
+        /* Home Section - Button */
+        
+        #home .btn {
+            height: 9%;
+            width: 10%;
+            /* padding: 10px; */
+            margin-top: 12px;
+            border-radius: 7px;
+            background-color: rgb(37, 131, 84);
+            color: white;
+            cursor: pointer;
+            border: 1px solid black;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+        
+        #home .btn:hover {
+            /* background-color: rgb(127, 182, 159);
+            color: black; */
+            color: green;
+            background-color: white;
+        }
+        /* Services */
+        
+        #services-container {
+            /* border: 2px solid red; */
+            /* top: 45px; */
+            width: 100%;
+            height: 585px;
+            margin: 4px auto;
+            position: relative;
+            z-index: -1;
+        }
+        /* Serivies - Primary Heading */
+        
+        #services-container .primary-heading {
+            position: relative;
+            display: block;
+            text-align: center;
+            font-size: 3rem;
+            margin-top: 45px;
+            margin-bottom: 45px;
+        }
+        /* Serivices - Outter Box */
+        
+        #services {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* Services - Box */
+        
+        #services-container #services .box {
+            /* background-color: rgb(125, 204, 250); */
+            background-color: rgb(98, 226, 98);
+            border-radius: 23px;
+            border: 2px solid white;
+            margin: 10px;
+        }
+        /* Services Inside the Box */
+        
+        #services-container #services .box img {
+            width: 170px;
+            height: 170px;
+            display: block;
+            margin: 15px auto 4px auto;
+        }
+        
+        #services-container #services .box .secondary-heading {
+            text-align: center;
+            padding: 0px;
+            margin: 4px auto 1px auto;
+            /* border: 2px solid orange; */
+            font-size: 1.8rem;
+        }
+        
+        #services-container #services .box p {
+            text-align: justify;
+            padding: 7px;
+            margin: 3px;
+        }
+        /* Client Section */
+        
+        #client-section {
+            /* border: 2px solid orange; */
+            width: 100%;
+            height: 319px;
+            margin: 4px auto;
+        }
+        
+        #client-section::before {
+            content: "";
+            position: absolute;
+            background: url('Image/client.jpg');
+            z-index: -1;
+            opacity: 0.5;
+            width: 100%;
+            height: 319px;
+        }
+        /* Client Section - Heading Section */
+        
+        #client-section .primary-heading {
+            display: block;
+            text-align: center;
+            font-size: 3rem;
+        }
+        /* Client Section - Image Section */
+        
+        #client-section .item-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 2px solid orange; */
+            margin-top: 83px;
+        }
+        
+        #client-section .item-section .image-items {
+            display: flex;
+            /* border: 2px solid green; */
+            padding: 4px;
+            margin: 2px 45px;
+        }
+        
+        #client-section .item-section .image-items img {
+            width: 100px;
+            height: 100px;
+        }
+        /* Details */
+        
+        #details {
+            /* border: 2px solid green; */
+            top: 0px;
+            width: 100%;
+            height: 715px;
+        }
+        
+        #details::before {
+            content: "";
+            background: url('Image/contact.jpg') no-repeat center center/cover;
+            width: 100%;
+            height: 715px;
+            position: absolute;
+            z-index: -1;
+            opacity: 0.9;
+        }
+        /* Details - Heading */
+        
+        #details .primary-heading {
+            display: block;
+            /* border: 2px solid red; */
+            text-align: center;
+            font-size: 3rem;
+            padding: 20px;
+            margin-top: 0px;
+        }
+        /* Details - Items */
+        
+        #details .detail-items {
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 45px;
+            font-size: 1.4rem;
+        }
+        
+        #details .detail-items form {
+            width: 45%;
+        }
+        
+        #details .detail-items label {
+            padding: 3px;
+            margin: 12px auto;
+        }
+        
+        #details .detail-items input,
+        #details .detail-items textarea {
+            width: 100%;
+            display: block;
+            padding: 9px;
+            margin: 12px auto;
+            font-size: 1rem;
+            /* margin: 12px; */
+        }
+        
+        #details .detail-items input::placeholder,
+        #details .detail-items textarea::placeholder {
+            font-size: 1rem;
+            color: black;
+        }
+        /* Footer */
+        
+        .footer {
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
